@@ -18,7 +18,7 @@ export default function App() {
   let ResponsiveDesign = defaultProps.rddb;
   let WebApps = defaultProps.wadb;
 
- const [module,setmodule] = useState(ResponsiveDesign)
+ const [module,setmodule] = useState(WebApps)
 
   const settings = {
     dots: true,
