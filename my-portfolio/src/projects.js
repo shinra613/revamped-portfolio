@@ -40,7 +40,19 @@ const ResponsiveDesigns = [
 ];
 
 const WebApps = [
+
   {
+    
+    sn: 0,
+    name: "Triangle-pedia App",
+    def:
+      "A web app (HTML/CSS/ Vanilla javascript) which helps you calculate the area, angle and hypotenuse of a triangle. It also contains a quiz section with triangle related questions.",
+    demo: "https://funtriangle.netlify.app/",
+    url: "https://github.com/shinra613/neog-12-triangle-app",
+    img: "./images/triangle.png"
+  },
+  {
+    
     sn: 1,
     name: "Cash Register",
     def:
