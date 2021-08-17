@@ -98,6 +98,26 @@ const WebApps = [
     url: "https://github.com/shinra613/neog-6-minion-translator",
     img: "./images/minion.png"
   }
+  ,
+  {
+    sn: 7,
+    name: "Naruto Quiz App",
+    def:
+      "lets brush up your shinobi knowledge",
+    demo: "https://repl.it/@AkhilVenkateshP/NarutoQuizGame?embed=1&output=1#index.js",
+    url: "https://github.com/shinra613/neog-2-NarutoQuizGame",
+    img: "./images/naruto.png"
+  }
+  ,
+  {
+    sn: 8,
+    name: "CLI Quiz App",
+    def:
+      "This is a simple javascript based CLI QUIZ app about me.",
+    demo: "https://repl.it/@AkhilVenkateshP/FirstAssignment?embed=1&output=1#index.js",
+    url: "https://github.com/shinra613/neog-1-CLI-quiz-aboutme",
+    img: "./images/cli.png"
+  }
 ];
 
 let defaultProps ={

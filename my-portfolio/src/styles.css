@@ -8,6 +8,15 @@ body {
   margin: auto;
 }
 
+.projecttab{
+  display: flex;
+  
+}
+
+.projecttab >button {  
+  margin-right: 30px;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -403,6 +412,8 @@ margin-bottom: 50px;
     max-width: 100%;
     
   }
+
+  
 
   .body-one{
     width: 70%;
