@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-
 import "./styles.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import ResponsiveDesigns from "./projects";
+import defaultProps from "./projects";
 import blog from "./blogs";
-import render from "./engine";
+import Render from "./engine";
 
 
 
@@ -15,7 +13,10 @@ import render from "./engine";
 
 export default function App() {
 
- const [module,setmodule] = useState(ResponsiveDesigns)
+  let ResponsiveDesign = defaultProps.rddb;
+  let WebApps = defaultProps.wadb;
+
+ const [module,setmodule] = useState(ResponsiveDesign)
 
   const settings = {
     dots: true,
@@ -64,31 +65,31 @@ export default function App() {
               <tr>
                 <td>HTML</td>
                 <td>
-                  <i class="fab fa-html5 fa-2x"></i>
+                  <i className="fab fa-html5 fa-2x"></i>
                 </td>
               </tr>
               <tr>
                 <td>CSS</td>
                 <td>
-                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <i className="fab fa-css3-alt fa-2x"></i>
                 </td>
               </tr>
               <tr>
                 <td>JAVASCRIPT</td>
                 <td>
-                  <i class="fab fa-js-square fa-2x"></i>
+                  <i className="fab fa-js-square fa-2x"></i>
                 </td>
               </tr>
               <tr>
                 <td>REACT</td>
                 <td>
-                  <i class="fab fa-react fa-2x"></i>
+                  <i className="fab fa-react fa-2x"></i>
                 </td>
               </tr>
               <tr>
                 <td>REDUX</td>
                 <td>
-                  <i class="fab fa-react fa-2x"></i>
+                  <i className="fab fa-react fa-2x"></i>
                 </td>
               </tr>
             </table>
@@ -155,7 +156,7 @@ export default function App() {
             <Slider {...settings}>
               {blog.map((item) => {
                 return (
-                  <div className="slider-container">
+                  <div  keys={item} className="slider-container">
                     <div className="slider-content">
                       <h1>{item.name}</h1>
                       <small>{item.date}</small>
@@ -171,13 +172,15 @@ export default function App() {
             </Slider>
           </div>
           <div className="blog">
-            <h1>Projects ({ResponsiveDesigns.length})</h1>
-            <button onClick={()=>setmodule(ResponsiveDesigns)} >Responsive Designs ({ResponsiveDesigns.length})</button>
+            <h1>Projects ({ResponsiveDesign.length})</h1>
+            <button className="btn-one" onClick={()=>setmodule(WebApps)}>Web Apps({WebApps.length})</button>
+            <button className="btn-one" onClick={()=>setmodule(ResponsiveDesign)} >Responsive Designs ({ResponsiveDesign.length})</button>
           </div>
           <div className="blog">
            
             <div className="slider-container">
-              {render(module)}
+              
+              <Render types={module}/>
             </div>
           </div>
         </div>
