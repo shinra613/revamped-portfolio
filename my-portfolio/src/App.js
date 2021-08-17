@@ -7,12 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ResponsiveDesigns from "./projects";
 import blog from "./blogs";
+import render from "./engine";
 
 
 
 
 
 export default function App() {
+
+ const [module,setmodule] = useState(ResponsiveDesigns)
+
   const settings = {
     dots: true,
     infinite: true,
@@ -168,40 +172,12 @@ export default function App() {
           </div>
           <div className="blog">
             <h1>Projects ({ResponsiveDesigns.length})</h1>
-            <h2>Responsive Designs ({ResponsiveDesigns.length})</h2>
+            <button onClick={()=>setmodule(ResponsiveDesigns)} >Responsive Designs ({ResponsiveDesigns.length})</button>
           </div>
           <div className="blog">
            
             <div className="slider-container">
-              {ResponsiveDesigns.map((item) => {
-                return (
-                  <div className="project-content">
-                    <h1>{item.name}</h1>
-                    <img
-                      className="pro-img"
-                      src={item.img}
-                      style={{ width: "100%" }}
-                    />
-                    <p>{item.def}</p>
-
-                    <table>
-                      <tr>
-                        <td>
-                          <a href={item.url} target="_blank">
-                            <button className="btn-one">See Code</button>
-                          </a>{" "}
-                        </td>
-                        <td>
-                          {" "}
-                          <a href={item.demo} target="_blank">
-                            <button className="btn-two">Test App</button>
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                );
-              })}
+              {render(module)}
             </div>
           </div>
         </div>
