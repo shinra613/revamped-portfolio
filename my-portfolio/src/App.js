@@ -8,6 +8,7 @@ import blog from "./blogs";
 import Render from "./engine";
 import Tech from "./tech";
 import Hobbies from "./hobbies";
+import Social from "./social";
 
 
 
@@ -60,6 +61,7 @@ export default function App() {
       </div>
       <div className="container-body">
         <div className="body-one ">
+          <Social />
           <Tech />
 
           <div className="exp">
@@ -110,7 +112,7 @@ export default function App() {
             </Slider>
           </div>
           <div className="blog">
-            <h1>Projects ({ResponsiveDesign.length})</h1>
+            <h1>Projects </h1>
             <div className="projecttab">
             <button className="btn-one " onClick={()=>setmodule(WebApps)}>Web Apps({WebApps.length})</button> 
             <button className="btn-one " onClick={()=>setmodule(ResponsiveDesign)} >Responsive Designs ({ResponsiveDesign.length})</button>

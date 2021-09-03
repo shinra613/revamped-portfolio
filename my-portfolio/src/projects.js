@@ -40,6 +40,26 @@ const ResponsiveDesigns = [
 ];
 
 const WebApps = [
+  {
+    
+    sn: -2,
+    name: "Birthday Palindrome app",
+    def:
+      "A basic react app which checks if your birthdate is a palindrome or not. If not, it will show the next palindrome date and the number of days its away from your birth date.",
+    demo: "http://neog-13-birthday-palindrome-app.vercel.app/",
+    url: "https://github.com/shinra613/neog-13-birthdayPalindrome-app",
+    img: "./images/palindrome.png"
+  },
+  {
+    
+    sn: -1,
+    name: "Profit/Loss app",
+    def:
+      "A basic react app which helps your calculate your stock profit / loss.",
+    demo: "http://neog-14-profit-loss-app.vercel.app/",
+    url: "https://github.com/shinra613/neog-14-profitLoss-app",
+    img: "./images/profitloss.png"
+  },
 
   {
     

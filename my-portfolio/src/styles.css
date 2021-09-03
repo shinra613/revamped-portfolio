@@ -130,6 +130,18 @@ body {
   text-align: left;
 }
 
+.social-div{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+.fab{
+  color: black;
+}
+
 .tech {
   background-color: white;
   border-radius: 12px;
@@ -277,12 +289,14 @@ body {
 .exp {
   background-color: white;
   border-radius: 12px;
-  padding: 24px;
+  padding: 24px 10px;
 }
 
 .exp-container{
 display:flex;
 margin: 10px;
+justify-content: space-between;
+
 
 }
 
@@ -295,8 +309,7 @@ margin: 10px;
 
   .exp-content{
     margin: 0 10px;   
-    width: 100%;
-    text-align: left;
+    text-align: justify;
     
   }
 
@@ -305,7 +318,7 @@ margin: 10px;
     font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #828282;
   margin: 5px 0;
@@ -385,24 +398,41 @@ margin-bottom: 50px;
   .header-content{
     width: 70%;
     margin: 30px auto;
-    text-align: center;
+    
     
   }
 
   .header-title{
     width: 80%;
+    max-width: 100%; 
     margin: auto;
     flex-direction:column;
     justify-content: center;
+   
   }
+  .header-title>div>p{
+    font-size: 14px;
+    max-width: 100%; 
+    
+   
+  }
+
   
 
   .header-body{
     width: 80%;
     margin: 30px auto;
     text-align: left;
-
     
+    
+  }
+
+  .header-body>p{
+    font-size: 14px;
+  }
+
+  .slider-content button {
+   width: 40%;
   }
 
   .container-body{
@@ -411,6 +441,10 @@ margin-bottom: 50px;
     flex-direction:column;
     max-width: 100%;
     
+  }
+
+  .container-body p {
+    font-size: 14px;
   }
 
   
@@ -440,6 +474,10 @@ margin-bottom: 50px;
 .hobbies{
   margin-bottom: 30px;
 
+}
+
+.hobbies p {
+  font-size: 14px;
 }
 
 .blog{

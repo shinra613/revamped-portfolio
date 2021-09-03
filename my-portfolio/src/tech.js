@@ -1,6 +1,6 @@
 const Tech = () => {
     return (<div className="tech">
-    <h1>Front end</h1>
+    <h1>Technologies </h1>
 
     <table>
       <tr>
@@ -27,12 +27,7 @@ const Tech = () => {
           <i className="fab fa-react fa-2x"></i>
         </td>
       </tr>
-      <tr>
-        <td>REDUX</td>
-        <td>
-          <i className="fab fa-react fa-2x"></i>
-        </td>
-      </tr>
+      
     </table>
   </div>)
 }
